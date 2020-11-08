@@ -2,13 +2,15 @@ rulesetdir
 rfcstyle
 normal
 set size 9
-set topology 3
+set topology WRAPX|WRAPY|ISO
 set generator 2
-set startpos 3
-set tinyisles 1
+set startpos VARIABLE
+set tinyisles enabled
 set startunits cccccccwwwwwwwxxxxxxx
 set saveturns 1
-set separatepoles 0
+set separatepoles disabled
 set techpenalty 0
 set dispersion 3
 set timeout 300
+set unitwaittime 0
+
