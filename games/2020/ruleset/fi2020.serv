@@ -4,6 +4,52 @@
 # rules after they've been changed.
 #
 
-rulesetdir {{ ruleset.name }}
+rulesetdir ./build/{{ ruleset.name }}/
+
+rulesetdir
+rfcstyle
+normal
+
+set endspaceship disabled
+set gold 5000
+set nationset all
+set aifill 145
+set landmass 28
+
+set size {{ 4 * ruleset.factor }}
+set mapsize=PLAYER
+set tilesperplayer={{ 100 * ruleset.factor }}
+
+set citymindist {{ [11, 2 * ruleset.factor] | min }}
+set borders EXPAND
+set happyborders ALLIED
+set diplomacy ALL
+set revolen 1
+set contactturns 5
+set topology WRAPX|WRAPY|ISO
+set generator FRACTAL
+set startpos VARIABLE
+set tinyisles enabled
+set startunits ccccwwwwxxxx
+set saveturns 1
+set separatepoles disabled
+set techpenalty 0
+set dispersion 3
+set timeout 300
+set unitwaittime 0
+
+set generator="FRACTAL"
+set barbarians=disabled
+set startpos="ALL"
+set huts=0
+set landmass=40
+set separatepoles=enabled
+set specials=300 
+set steepness=20 
+set temperature=70 
+set topology="WRAPX|WRAPY|ISO" 
+set wetness=40 
+set alltemperate=disabled 
+set revealmap=START
 
 # changed game settings are defined in game.ruleset

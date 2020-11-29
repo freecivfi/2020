@@ -1602,7 +1602,7 @@ Roads and railroads can only be built on River tiles if your\
 [base_fortress]
 extra          = "Fortress"
 gui_type       = "Fortress"
-border_sq      = 5
+border_sq      = {{ 5 * ruleset.factor }}
 flags          = "NoAggressive", "NoStackDeath", "DiplomatDefense"
 
 [base_airbase]
@@ -1613,7 +1613,7 @@ flags          = "NoStackDeath", "ParadropFrom"
 [base_buoy]
 extra          = "Buoy"
 gui_type       = "Fortress"
-vision_main_sq = 5
+vision_main_sq = {{ 5 * ruleset.factor }}
 
 [base_ruins]
 extra          = "Ruins"

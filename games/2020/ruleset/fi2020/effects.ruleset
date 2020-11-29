@@ -104,7 +104,7 @@ reqs    =
 ; Vision benefit from fortress watchtowers
 [effect_fortress_vision]
 type    = "Unit_Vision_Radius_Sq"
-value   = 8
+value   = {{ 8 * ruleset.factor }}
 reqs    =
     { "type", "name", "range"
       "Extra", "Fortress", "tile"
@@ -130,7 +130,7 @@ reqs    =
 ; Base vision range - radius of vision is sqrt(5) = 2.24
 [effect_city_vision]
 type    = "City_Vision_Radius_Sq"
-value   = 5
+value   = {{ 5 * ruleset.factor }}
 
 [effect_trade_routes_base]
 type    = "Max_Trade_Routes"
